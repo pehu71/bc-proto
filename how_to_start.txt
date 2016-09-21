@@ -1,0 +1,2 @@
+cd to dir containing package.json
+npm start
