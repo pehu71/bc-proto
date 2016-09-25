@@ -1,9 +1,9 @@
-import rollup      from 'rollup'
-import nodeResolve from 'rollup-plugin-node-resolve'
-import commonjs    from 'rollup-plugin-commonjs';
-import uglify      from 'rollup-plugin-uglify'
+var rollup  = require('rollup');
+var nodeResolve = require('rollup-plugin-node-resolve');
+var commonjs = require('rollup-plugin-commonjs');
+var uglify  = require('rollup-plugin-uglify');
 
-export default {
+module.exports = {
     entry: 'app/main.js',
     dest: 'dist/build.js', // output a single application bundle
     sourceMap: false,
@@ -11,9 +11,9 @@ export default {
     plugins: [
         nodeResolve({jsnext: true, module: true}),
         commonjs({
-            include: 'node_modules/rxjs/**',
+            include: 'node_modules/rxjs/**'
         }),
         uglify()
     ]
-}
+};
 
