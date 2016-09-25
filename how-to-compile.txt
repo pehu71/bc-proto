@@ -1,0 +1,13 @@
+----- IMPORTANT -------
+
+* set WebStorm not to recompile generated factories in his way, it must be done by rollup
+* exclude "aot" folder in tsconfig.json and DO NOT RUN COMPILE ALL until rollup finishes!!!
+
+
+COMPILATION COMMANDS
+
+Angular template compiler:
+node_modules\.bin\ngc -p tsconfig-aot.json
+
+Rollup build
+node_modules\.bin\rollup -c rollup.js
