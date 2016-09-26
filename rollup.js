@@ -4,10 +4,10 @@ var commonjs = require('rollup-plugin-commonjs');
 var uglify  = require('rollup-plugin-uglify');
 
 module.exports = {
-    entry: 'app/main.js',
-    dest: 'dist/build.js', // output a single application bundle
+    entry: 'app/main-aot.js',
+    dest: 'dist/build.js',
     sourceMap: false,
-    format: 'iife',
+    format: 'cjs',
     plugins: [
         nodeResolve({jsnext: true, module: true}),
         commonjs({
