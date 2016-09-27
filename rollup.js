@@ -7,7 +7,7 @@ module.exports = {
     entry: 'app/main-aot.js',
     dest: 'dist/build.js',
     sourceMap: false,
-    format: 'cjs',
+    format: 'iife',
     plugins: [
         nodeResolve({jsnext: true, module: true}),
         commonjs({
