@@ -11,10 +11,8 @@
     "suppressImplicitAnyIndexErrors": true
   },
 
-  "files": [
-    "app/app.module.ts",
-    "app/main-aot.ts",
-    "./typings/index.d.ts"
+  "exclude": [
+    "node_modules"
   ],
 
   "angularCompilerOptions": {
