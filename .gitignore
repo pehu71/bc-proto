@@ -1,5 +1,6 @@
 node_modules
-typings
 .idea
 aot
 dist
+app/**/*.js
+app/**/*.map
