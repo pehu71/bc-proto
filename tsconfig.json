@@ -11,7 +11,6 @@
   },
   "exclude": [
     "node_modules",
-    "prod",
-    "aot"
+    "script-aot-src"
   ]
 }
