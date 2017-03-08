@@ -3,13 +3,11 @@ import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
 import {AppComponent} from './app.component';
 import {IndexComponent} from "./index.component";
+import {routes} from './app.routes';
 
 @NgModule({
     imports: [BrowserModule,
-        RouterModule.forRoot([
-            {path: '', component: IndexComponent},
-            {path: 'feature', loadChildren: 'app/feature.module#FeatureModule'}
-        ])
+        RouterModule.forRoot(routes)
     ],
     declarations: [AppComponent, IndexComponent],
     bootstrap: [AppComponent]
