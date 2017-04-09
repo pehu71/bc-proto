@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/primeng-test.iml" filepath="$PROJECT_DIR$/.idea/primeng-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bc-proto.iml" filepath="$PROJECT_DIR$/.idea/bc-proto.iml" />
     </modules>
   </component>
 </project>
