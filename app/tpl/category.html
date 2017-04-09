@@ -1,15 +1,12 @@
-<h3>Feature route</h3>
+<h3>Category route</h3>
 
 <p>
     <a [routerLink]="['/']">Go to index</a>
 </p>
 
-<p>
-    <a [routerLink]="[prefix + '/68/drevene']">Kabely / Drevene</a>
-</p>
+<!--todo: stick with single category, just send NamePath from db and put it to the alias directive as-->
+<!--an array of names for use with breadcrumb-->
 
-<p>
-    <a [routerLink]="[prefix + '/71/ohnute']">Kabely / Drevene / Ohnute</a>
-</p>
+<!--todo: mount bcAlias to flat menu on router, -->
+<!--todo: extend MenuItem model - fit bcAlias there-->
 
-<!--todo: remove prefix, alway take from category root, compose from namepath and idpath which are in db-->

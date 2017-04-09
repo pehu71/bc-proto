@@ -10,7 +10,7 @@ import {Directive, ElementRef, HostListener, Input} from '@angular/core';
 
 export class BcAliasDirective {
 
-    @Input('bcAlias') alias;
+    @Input('bcAlias') alias; // todo: rewrite as string array, use on router link
 
     constructor (private el: ElementRef) {}
 

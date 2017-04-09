@@ -6,8 +6,7 @@ import {RouterModule} from "@angular/router";
 @NgModule({
     imports: [CommonModule,
         RouterModule.forChild([
-            {path: '', component: CategoryComponent},
-            {path: '**', component: CategoryComponent},
+            {path: ':id/:seo', component: CategoryComponent}
         ])
     ],
     declarations: [CategoryComponent],
