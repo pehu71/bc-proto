@@ -7,27 +7,22 @@ import {ActivatedRoute} from '@angular/router';
 
 export class CategoryComponent implements OnInit {
 
-    fromRootPrefix: string = './';
+    veryRoot: string = '/c/';
+    prefix: string;
 
     constructor(private route: ActivatedRoute) {
     }
 
     ngOnInit(): void {
         let tree;
+        let ser;
         this.route.url.subscribe(
             url => {
                 tree = url;
-                switch (tree.length) {
-                    case 2:
-                        this.fromRootPrefix = './';
-                        break;
-                    case 4:
-                        this.fromRootPrefix = '../';
-                        break;
-                    default:
-                        this.fromRootPrefix = './'
-                }
-                console.log(tree)
+                console.log(tree);
+                ser = url.join('/');
+                console.log(ser);
+                this.prefix = this.veryRoot + ser;
             });
     }
 
